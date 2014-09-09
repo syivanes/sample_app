@@ -6,10 +6,13 @@ development:
   username: sergeyivanes
   password:
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: rails_db
   pool: 5
   username: sergeyivanes
   password:
+
+cucumber:
+  <<: *test
